@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: rgb(247, 217, 217);
+  font-family: 'Times New Roman', Times, serif;
+  font-size:large;
+  font-weight: bold;
+  font-style: italic;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  max-width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  min-height: 100vh;
+}
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.note.new
+{
+ background-color: rgb(113, 171, 224) ; 
+} 
+textarea{
+  border: none;
+  resize: none ;
+  background-color: rgb(113, 171, 224) ;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: rgb(180, 212, 241);
+  border: none;
+  border-radius: 20px;
+  padding: 4px 8px 4px 8px;
+}
+.save:hover{
+  background-color: rgb(201, 130, 154);
+  cursor: pointer;
+}
+.delete-icon{
+  cursor: pointer;
+}
+.search{
+  display: flex;
+  align-items: center;
+  background-color:rgb(157, 195, 231) ;
+  border-radius: 20px;
+  padding: 8px;
+  margin-bottom: 1.5em;
+}
+.search input{
+  border: none;
+  background-color:rgb(157, 195, 231) ;
+}
+.search input:focus{
+  outline: none;
+}
+.Toggle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1{
+  font-weight:bolder;
+  font-style: oblique;
+}
+.dark-mode {
+    background-color: black;
+}
+.dark-mode h1{
+  color: white;
+}
+.note{
+  background-color: rgb(180, 212, 241);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.Footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
